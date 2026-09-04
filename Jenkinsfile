@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'NodeJS-18'
+        nodejs 'NodeJS-25'
     }
 
     environment {
-        DOCKER_REPO = 'chafah/landmark-web-app'
+        DOCKER_REPO = 'johnsuh/landmark-web-app'
         IMAGE_TAG   = "build-${BUILD_NUMBER}"
     }
 
